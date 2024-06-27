@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"> <!-- 设置网页的字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口，用于响应式设计 -->
+    <title>王泽洲 - 学术主页</title> <!-- 网页标题 -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* 设置字体 */
+            line-height: 1.6; /* 设置行高 */
+            margin: 0; /* 设置页面外边距为0 */
+            padding: 0; /* 设置页面内边距为0 */
+            color: #333; /* 设置字体颜色 */
+            background-color: #d6eaf8; /* 非常浅的绿色背景 */
+        }
+        header {
+            background: url('header-background.jpg') no-repeat center center; /* 设置背景图像 */
+            background-size: cover; /* 背景图像覆盖整个背景 */
+            height: 250px; /* 设置头部高度 */
+            display: flex; /* 使用Flexbox布局 */
+            flex-direction: column; /* 设为纵向布局 */
+            justify-content: center; /* 垂直居中 */
+            align-items: center; /* 水平居中 */
+            text-align: center; /* 文本居中 */
+            padding: 2rem 0; /* 设置上下内边距 */
+        }
+        header h1 {
+            color: #FFFFFF; /* 设置主标题字体颜色 */
+            font-size: 3rem; /* 设置主标题字体大小 */
+            height: 5%;
+            margin: 0.5rem 0; /* 设置主标题上下外边距 */
+        }
+        header p {
+            color: #FFFFFF; /* 设置副标题字体颜色 */
+            font-size: 2.2rem; /* 设置副标题字体大小 */
+            margin: 0.5rem 0; /* 设置副标题上下外边距 */
+        }
+        header p2 {
+            color: #FFFFFF; /* 设置副副标题字体颜色 */
+            font-size: 1.8rem; /* 设置副副标题字体大小 */
+            margin: 0.5rem 0; /* 设置副副标题上下外边距 */
+        }
+        nav {
+            background: #000000; /* 设置导航栏背景颜色 */
+            color: #fff; /* 设置导航链接字体颜色 */
+            display: flex; /* 使用Flexbox布局 */
+            justify-content: center; /* 居中对齐 */
+            padding: 1rem; /* 设置内边距 */
+            flex-wrap: wrap; /* 允许导航链接换行 */
+        }
+        nav a {
+            color: #fff; /* 设置导航链接字体颜色 */
+            margin: 0.5rem; /* 设置导航链接外边距 */
+            text-decoration: none; /* 去掉下划线 */
+            font-size: 1.65rem; /* 设置导航链接字体大小 */
+        }
+        .container {
+            padding: 2rem; /* 设置容器内边距 */
+        }
+        section {
+            margin-bottom: 2rem; /* 设置节的下外边距 */
+        }
+         section h3 {
+            font-size: 3rem; /* 设置各节标题字体大小 */
+            margin-bottom: 1.5rem; /* 减少标题与正文之间的间距 */
+            margin-top: 0rem;
+        }
+        section h2 {
+            font-size: 2rem; /* 设置各节标题字体大小 */
+            margin-bottom: 0.5rem; /* 减少标题与正文之间的间距 */
+            margin-top: 0rem;
+        }
+        .image-and-text {
+            display: flex; /* 使用Flexbox布局 */
+            align-items: flex-start; /* 将文字部分顶端对齐 */
+            flex-wrap: wrap; /* 允许内容换行 */
+        }
+        .image-placeholder {
+            width: 100%; /* 设置图片宽度为100% */
+            max-width: 300px; /* 设置图片的最大宽度 */
+            height: auto; /* 让图片高度按比例调整 */
+            background: #e0e0e0; /* 占位背景色 */
+            margin-right: 1rem; /* 图片右侧添加间距 */
+        }
+        .image-placeholder2 {
+            width: auto; /* 自动调整宽度 */
+            height: 300px; /* 让图片高度按比例调整 */
+            max-height:600px;
+            background: #e0e0e0; /* 占位背景色 */
+            margin-right: 1rem; /* 图片右侧添加间距 */
+        }
+        .about-text {
+            flex: 1; /* 让文字部分占据剩余空间 */
+    align-self: flex-start; /* 让文本部分顶端对齐 */
+    margin-top: 0; /* 清除默认的上外边距 */
+        }
+        .about-text p {
+            font-size: 1.5rem; /* 调整文字字体大小 */
+            margin: 0; /* 清除默认的外边距 */
+        }
+        footer {
+            background: #000000; /* 设置页脚背景颜色 */
+            color: #fff; /* 设置页脚字体颜色 */
+            text-align: center; /* 文本居中 */
+            padding: 1rem 0; /* 设置页脚内边距 */
+            position: fixed; /* 固定在页面底部 */
+            width: 100%; /* 设置页脚宽度 */
+            bottom: 0; /* 设置页脚位置 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>王泽洲（ZE-ZHOU WANG）</h1> <!-- 主标题 -->
+    </header>
+    <nav>
+        <a href="home.html">首页/Home</a> <!-- 导航链接 -->
+        <a href="research.html">研究工作/Research</a> <!-- 导航链接 -->
+        <a href="publications.html">发表论文/Publications</a>
+        <a href="people.html">组内人员/People</a>
+        <a href="facilities.html">实验设施/Facilities</a>
+        <a href="field-photos.html">野外照片/Field Photos</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h3>待完善</h3> <!-- 节标题 -->
+            
+    </div>
+
+   
+</body>
+</html>
+
