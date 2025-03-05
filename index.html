@@ -1,0 +1,215 @@
+<html>
+<head>
+    <title> 王泽洲 - 学术主页 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口，用于响应式设计 -->
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; 
+
+        }
+        header {
+            background: url('header-background.jpg') no-repeat center center; /* 设置背景图像 */
+            background-size: cover; /* 背景图像覆盖整个背景 */
+            height: 80px; /* 设置头部高度 */
+            display: flex; /* 使用Flexbox布局 */
+            flex-direction: column; /* 设为纵向布局 */
+            justify-content: center; /* 垂直居中 */
+            align-items: center; /* 水平居中 */
+            text-align: center; /* 文本居中 */
+            padding: 2rem 0; /* 设置上下内边距 */
+        }
+        header h1 {
+            color: #FFFFFF; /* 设置主标题字体颜色 */
+            font-size: 3rem; /* 设置主标题字体大小 */
+            height: 100%;
+            margin: 0.5rem 0; /* 设置主标题上下外边距 */
+        }
+        header p {
+            color: #FFFFFF; /* 设置副标题字体颜色 */
+            font-size: 2.2rem; /* 设置副标题字体大小 */
+            margin: 0.5rem 0; /* 设置副标题上下外边距 */
+        }
+
+        header p2 {
+            color: #FFFFFF; /* 设置副副标题字体颜色 */
+            font-size: 1.8rem; /* 设置副副标题字体大小 */
+            margin: 0.5rem 0; /* 设置副副标题上下外边距 */
+        }
+        nav {
+            background: #000000; /* 设置导航栏背景颜色 */
+            color: #fff; /* 设置导航链接字体颜色 */
+            display: flex; /* 使用Flexbox布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            gap: 50px; /* 设置导航链接间距 */
+            padding: 0rem; /* 设置内边距 */
+            flex-wrap:nowrap; /* 允许导航链接换行 */
+            margin-top: 170px; /* 负值让导航栏向上移动 */
+            width:100%
+        }
+        nav a {
+            color: #fff; /* 设置导航链接字体颜色 */
+            margin: 0.5 rem; /* 设置导航链接外边距 */
+            text-decoration: none; /* 去掉下划线 */
+            font-size: 1.5rem; /* 设置导航链接字体大小 */
+        }
+        nav a.current {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            gap: 2rem;
+        }
+        .left-column {
+            width: 220px;
+            margin-top: 50px;
+            margin-left: 20;
+            margin-right: -30;
+            padding:20px;
+        }
+        .left-column img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .left-column a {
+            text-decoration: none;
+            color: #333;
+        }
+        .small-spacing {
+        line-height: 0.8;
+        }    
+        .big-spacing {
+        line-height: 100;
+        }           
+        .personal-info h2 {
+            font-size:1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            justify-content: center; /* 垂直居中 */
+            align-items: center; /* 水平居中 */
+
+        }
+        .personal-info p {
+            margin-bottom: 0;
+            margin-top: 30px;
+            font-size: 1.2rem;
+            line-height: 0.3; /* 适当调整行高 */
+
+        }
+        .personal-info a {
+            margin-top: 10;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .personal-info 
+        br {
+            line-height: 0.5; /* 减少换行后的间距 */
+        }
+        .contacticons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+
+        }
+        .contacticons a {
+            color: #333;
+            font-size: 1.5rem;
+
+        }
+        .right-column {
+            flex: 1;
+            text-decoration: none;
+            margin-top: 50px;
+
+        }
+        .right-column p {
+            margin-bottom: 1rem;
+            text-decoration: none;
+        }
+        .right-column h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+        }
+        .right-column ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+            text-decoration: none;
+        }
+        .right-column li {
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+        }
+        .right-column a {
+        color: #333; /* 黑色 */
+
+        }
+        .increase-line-height {
+            line-height: 0;
+            margin-top: -0.28rem;
+        }
+    </style>
+</head>
+<body>
+    <header>      
+        <nav>
+            <a href="home.html" class="current">主页/Home</a>
+            <a href="Research.html">研究成果/Research</a>
+            <a href="publications.html">发表论文/Publications</a>
+            <a href="photos.html">照片/photos</a>
+        </nav>
+    </header>
+    <main>
+        <div class="left-column">
+            <img id="img1" src="shouye.jpg" alt="主页图片">
+            <div class="personal-info">
+                <h2 class="small-spacing">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp王泽洲<br><br><br>Ze-Zhou Wang</h2>
+                <p >教授，博士生导师</p>
+                <p><a href="https://www.cugb.edu.cn/">中国地质大学（北京）</a></p>
+                <p> 邮件：wzz@cugb.edu.cn</p>
+                <p class="big-spacing"> 电话：18162474918<br><br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp13718466754</p>
+
+            </div>
+        </div>
+        <div class="right-column">
+            <section class="education">
+                <h3>教育经历</h3>
+                <ul>
+                    <li>2014/09—2019/06 中国地质大学（北京）І  地球化学  І 理学博士 І  导师：<a href="https://cms.cugb.edu.cn/kxyjy/c/2021-09-10/706508.shtml" target="_blank">刘盛遨 </a>教授</li>
+                    <li>2010/09—2014/06 中国地质大学（北京）І  地质学（基地班）  І 理学学士  </li>
+                </ul>
+                <h3>工作经历</h3>
+                <ul>
+                    <li>2024/01—至今 中国地质大学（北京）І  科学研究院  І 教授 </li> </li>
+                    <li>2019/11—2023/12 华盛顿大学（西雅图）І 博士后  І 合作导师：<a href="https://ess.uw.edu/people/fang-zhen-teng/" target="_blank">Fang-Zhen Teng</a>（滕方振）教授 </li>
+                </ul>
+            </section>
+            <h3>研究方向</h3>
+            <p>从事同位素地球化学、岩石地球化学、行星化学研究。主要关注利用新兴的金属稳定同位素（如K、Zn、Mg、Fe、Li等）研究地幔化学组成不均一性成因、俯冲带壳幔相互作用与物质循环、陆壳形成与演化等领域内的科学问题。<br></p>
+            <p>正在开展以下研究方向的工作：<br>
+                <li>
+                太古宙长英质陆壳形成与演化；</li><br>
+                <li class="increase-line-height">地球深部产热元素（K、Th、U）分布和循环。</li>
+                </p>
+        
+            <section class="interests">
+                <h3>承担项目</h3>
+                <ul>
+                    <li>2025/01—2028/12，国家自然科学基金面上项目，钾同位素对太古宙花岗岩类成因的约束，51万 （主持）</li>
+                    <li>2025/01—2027/12，海外高层次人才青年项目，金属稳定同位素地球化学，100万 （主持）</li>
+                    <li>2024/05—2029/4，中央高校基本科研业务费，王泽洲科研启动费，200万 （主持）</li>
+
+                </ul>
+            </section>
+            
+        </div>
+    </main>
+</body>
+</html>
