@@ -39,7 +39,7 @@ nav {
     padding: 0.5rem;
     flex-wrap: wrap; /* 允许在小屏幕上换行 */
     width: 100%;
-    margin-top: 0; /* 移除过大的上边距 */
+    margin-top: 190; /* 移除过大的上边距 */
 }
 
 nav a {
@@ -62,35 +62,42 @@ main {
 }
 
 .left-column {
-    width: 100%;
-    text-align: center; /* 文字居中 */
-    margin-top: 20px;
-
+    width: 220px;
+    margin-top: 100px;
+    margin-left: auto; /* 左右外边距设为 auto，使其在父容器中居中 */
+    margin-right: auto;
+    padding: 20px;
+    display: flex; /* 使用 Flexbox */
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 居中对齐 */
+    text-align: center; /* 让文本居中 */
 }
 
 .left-column img {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
+
 }
 
 @media (min-width: 768px) { 
     .left-column {
         width: 220px;
-        text-align: left; /* 文字左对齐 */
+        text-align: center; /* 文字左对齐 */
     }
 }
+
 .left-column a {
- 
+
     color: #333;
 }
 .right-column {
     flex: 1;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .right-column h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -112,7 +119,17 @@ main {
         }  
         .big-spacing {
         line-height: 0.4;
-        }      
+        text-align: left;
+        }    
+        .mid-spacing {
+        line-height: 1.5;
+        text-align: left;
+        }  
+        .address-spacing {
+        line-height: 1.5;
+        text-align: left;
+        margin-bottom: -15;
+        }    
     </style>
 </head>
 <body>
@@ -133,9 +150,15 @@ main {
                 <img src="hood.jpg" alt="hood">
                 <img src="sthelens.jpg" alt="sthelens">
                 <img src="baker.jpg" alt="baker">
-                <img src="rainer.jpg" alt="rainer">
+                <img src="rainier.jpg" alt="rainer">
                 <img src="jefferson.jpg" alt="jefferson">
                 <img src="wh.jpg" alt="wulanhada">
+                <h3>天文</h3>
+                <img src="comet_gw.jpg" alt="comet_gw">
+                <img src="meteor_fall.jpg" alt="meteor_fall">
+                <img src="mw_rainier.jpg" alt="mw_rainier">
+                <img src="mw_bcr.jpg" alt="mw_bcr">
+
 
                 
             </section>
